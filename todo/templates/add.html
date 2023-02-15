@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+<h1> Todo Add </h1>
+
+{% block container %}
+
+<form action="" method="POST" class="text-center">
+    {% csrf_token %}
+    <table class="table table-bordered table-striped"> {{form}} </table>
+    <input type="submit" value="Add Todo" class="btn btn-primary mt-3">
+</form>
+    
+{% endblock container %}
+    
